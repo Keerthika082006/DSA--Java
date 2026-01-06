@@ -6,11 +6,14 @@ public class countDigits {
         int original = n;
 
         while(n>0){
+            // last digit
             int last = n%10;
 
+            
             if(last != 0 && original%last==0){
                 count++;
             }
+            //removing last digit
             n/=10;
         }
         return count;
@@ -20,3 +23,4 @@ public class countDigits {
         System.out.println(fun(12));
     }
 }
+
